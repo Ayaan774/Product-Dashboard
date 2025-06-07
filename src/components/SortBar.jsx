@@ -7,8 +7,9 @@ function SortBar() {
 	const sortOrder = useSelector((state) => state.products.sortOrder);
 
 	return (
-		<div className="p-4 flex gap-2 items-center">
-			<span>Sort by price:</span>
+		<div className="p-4 flex flex-wrap justify-center gap-2 items-center">
+			<span className="font-semibold">Sort by price:</span>
+
 			<button
 				className={`px-4 py-2 border rounded cursor-pointer ${
 					sortOrder === "none"
@@ -30,6 +31,7 @@ function SortBar() {
 			>
 				Low to High
 			</button>
+
 			<button
 				className={`px-4 py-2 border rounded cursor-pointer ${
 					sortOrder === "high-to-low"

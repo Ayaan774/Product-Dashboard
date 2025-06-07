@@ -16,7 +16,7 @@ function FilterBar() {
 	);
 
 	return (
-		<div className="p-4 flex gap-2">
+		<div className="p-4 flex flex-wrap justify-center gap-2">
 			{categories.map((category) => (
 				<button
 					key={category}

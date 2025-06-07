@@ -31,15 +31,17 @@ function ProductDetail() {
 					Price: ${product.price}
 				</p>
 
-				<button
-					className="mt-4 bg-blue-600 text-white px-4 py-2 rounded cursor-pointer ml-60"
-					onClick={() => {
-						dispatch(addFavourite(product.id));
-						alert("Product added to favourites successfully");
-					}}
-				>
-					Add to Favourites
-				</button>
+				<div className="flex justify-center mt-4">
+					<button
+						className="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer"
+						onClick={() => {
+							dispatch(addFavourite(product.id));
+							alert("Product added to favourites successfully");
+						}}
+					>
+						Add to Favourites
+					</button>
+				</div>
 			</div>
 		</div>
 	);

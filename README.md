@@ -26,17 +26,21 @@ The app fetches products from the Fake Store API, and provides:
 ✅ Responsive design
 
 🚀 Live Demo
-👉 Deployed here (add your link)
+👉 Deployed here : 
+ 
+🗂️ Project Structure:
 
-🗂️ Project Structure
-txt
-Copy code
 src/
 ├── app/                # Redux store config
+
 ├── components/         # Reusable UI components (FilterBar, SortBar, SearchBar, ProductCard)
+
 ├── features/           # Redux slices for products & favorites
+
 ├── pages/              # Page components (ProductList, ProductDetail, Favorites)
+
 ├── index.css
+
 └── main.jsx
 
 🛠️ Tech Stack
@@ -52,15 +56,14 @@ Axios (API calls)
 
 Vite (build tool — fast dev & production builds)
 
-⚙️ Setup Instructions
+⚙️ Setup Instructions :
 Prerequisites
 Node.js >= 16
 
 npm >= 8
 
-Installation
-bash
-Copy code
+Installation:
+
 # 1. Clone the repository
 git clone https://github.com/your-username/product-dashboard.git
 

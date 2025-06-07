@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import FilterBar from "../components/FilterBar";
 import ProductCard from "../components/ProductCard";
+import SortBar from "../components/SortBar";
 
 function ProductList() {
 	//extract product data from store
-	const { allProducts, status, searchQuery, selectedCategory } = useSelector(
-		(state) => state.products
-	);
+	const { allProducts, status, searchQuery, selectedCategory, sortOrder } =
+		useSelector((state) => state.products);
 
 	if (status === "loading") return <div>Loading...</div>;
 
@@ -23,12 +23,18 @@ function ProductList() {
 		)
 		.filter((product) =>
 			product.title.toLowerCase().includes(searchQuery.toLowerCase())
-		);
+		)
+		.sort((a, b) => {
+			if (sortOrder === "low-to-high") return a.price - b.price;
+			if (sortOrder === "high-to-low") return b.price - a.price;
+			return 0;
+		});
 
 	return (
 		<>
 			<SearchBar />
 			<FilterBar />
+			<SortBar />
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
 				{filteredProducts.map((product) => (
 					<ProductCard key={product.id} product={product} />

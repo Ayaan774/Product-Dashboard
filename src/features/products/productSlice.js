@@ -19,8 +19,9 @@ const productsSlice = createSlice({
 		allProducts: [], // store fetched products
 		status: "idle", //loading status
 		error: null, //error message
-		searchQuery: "",
-		selectedCategory: "all",
+		searchQuery: "", // filter results by searched keywords
+		selectedCategory: "all", //filter by category
+		sortOrder: "none", //sort by price
 	},
 	reducers: {
 		setSearchQuery: (state, action) => {
@@ -28,6 +29,9 @@ const productsSlice = createSlice({
 		},
 		setSelectedCategory: (state, action) => {
 			state.selectedCategory = action.payload;
+		},
+		setSortedOrder: (state, action) => {
+			state.sortOrder = action.payload;
 		},
 	}, //reducers
 	extraReducers: (builder) => {
@@ -46,6 +50,7 @@ const productsSlice = createSlice({
 	}, // handling async thunk
 });
 
-export const { setSearchQuery, setSelectedCategory } = productsSlice.actions;
+export const { setSearchQuery, setSelectedCategory, setSortedOrder } =
+	productsSlice.actions;
 
 export default productsSlice.reducer;

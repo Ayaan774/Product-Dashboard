@@ -4,13 +4,13 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+-   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Product-Dashboard" 
+"# Product-Dashboard"
 
 🛍️ Product Dashboard
 A modern Product Dashboard built with React + Redux Toolkit.
@@ -27,17 +27,17 @@ The app fetches products from the Fake Store API, and provides:
 
 🚀 Live Demo
 👉 Deployed here : https://product-dashboard-pied.vercel.app/
- 
+
 🗂️ Project Structure:
 
 src/
-├── app/                # Redux store config
+├── app/ # Redux store config
 
-├── components/         # Reusable UI components (FilterBar, SortBar, SearchBar, ProductCard)
+├── components/ # Reusable UI components (FilterBar, SortBar, SearchBar, ProductCard)
 
-├── features/           # Redux slices for products & favorites
+├── features/ # Redux slices for products & favorites
 
-├── pages/              # Page components (ProductList, ProductDetail, Favorites)
+├── pages/ # Page components (ProductList, ProductDetail, Favorites)
 
 ├── index.css
 
@@ -65,16 +65,19 @@ npm >= 8
 Installation:
 
 # 1. Clone the repository
+
 git clone https://github.com/your-username/product-dashboard.git
 
 # 2. Move into the project directory
+
 cd product-dashboard
 
 # 3. Install dependencies
+
 npm install react react-dom react-router-dom @reduxjs/toolkit react-redux axios dotenv --save
 
-
 # 4. Start the development server
+
 npm run dev
 👉 App will be running at: http://localhost:5173
 
@@ -97,6 +100,15 @@ Routing with React Router
 
 Accessible UI (basic keyboard & screen-reader support)
 
+## Running Tests
+
+This project uses **Vitest** for testing.
+
+### Run all tests
+
+```bash
+npm run test
+
 📋 Notes
 Products are fetched from Fake Store API
 
@@ -111,3 +123,4 @@ Ayaan Sayed
 
 🏆 License
 This project is open-source — feel free to fork and use!
+```

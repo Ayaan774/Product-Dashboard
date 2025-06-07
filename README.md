@@ -108,8 +108,10 @@ This project uses **Vitest** for testing.
 
 ```bash
 npm run test
+```
 
-📋 Notes
+📋 Notes:
+
 Products are fetched from Fake Store API
 
 Favorites are stored in Redux (not persisted — can be improved with localStorage)
@@ -123,4 +125,4 @@ Ayaan Sayed
 
 🏆 License
 This project is open-source — feel free to fork and use!
-```
+

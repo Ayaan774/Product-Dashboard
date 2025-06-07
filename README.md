@@ -26,7 +26,7 @@ The app fetches products from the Fake Store API, and provides:
 ✅ Responsive design
 
 🚀 Live Demo
-👉 Deployed here : 
+👉 Deployed here : https://product-dashboard-pied.vercel.app/
  
 🗂️ Project Structure:
 
